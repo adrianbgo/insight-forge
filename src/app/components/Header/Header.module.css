@@ -1,0 +1,92 @@
+.Header {
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 50;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.HeaderNav {
+  position: relative;
+  max-width: 80rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.HeaderLogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeaderLogo {
+  flex: none;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.HeaderLinkContainer {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.HeaderLink {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: gray;
+  border: 2px solid indigo;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  & > :hover {
+    color: blue;
+  }
+}
+
+@media (min-width: 640px) {
+  .Header {
+    justify-content: start;
+    flex-wrap: nowrap;
+    padding: 0 auto;
+  }
+
+  .HeaderNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .HeaderLinkContainer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    row-gap: 0;
+    column-gap: 1.75rem;
+    margin-top: 0;
+    padding-inline-start: 1.75rem;
+  }
+
+  .HeaderLink {
+    border-inline-start-width: 1px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .HeaderNav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
