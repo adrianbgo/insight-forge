@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky"
   },
   "dependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
     "@copilotkit/backend": "^0.8.0",
     "@copilotkit/react-core": "^0.24.0",
     "@copilotkit/react-textarea": "^0.34.0",
